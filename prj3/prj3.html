@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Github Portfolio
+    </title>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/brython@3.12.2/brython.min.js">
+    </script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/brython@3.12.2/brython_stdlib.js">
+    </script>
+  
+    <link href="mystyle.css" type="text/css" rel="stylesheet">
+  </head>
+
+  <body>
+   <h1> My Github Portfolio</h1>
+   <h2> YOUR NAME</h2>
+   <img src="me12.png" alt="me" width="50px">
+   <p> Brief BIO</p>
+
+    <div id="description" style="background-color:#700;padding:10px;color:#FFF;"></div>
+<p></p>
+<img src="6.png" width ="400" height ="400" alt="Happy Family" usemap="#familymap" />
+<p></p>
+<map name="familymap" id="familymap">
+</map>
+<script type="text/python">
+from browser import document, html
+
+def writetext(txt):
+    # write text in the description zone (white on red)
+    document["description"].text = txt
+
+coords = [
+    (0, 0, 160, 95),
+    (180, 0, 400, 165),
+    (0, 120, 180, 400),
+    (175, 235, 270, 400)
+]
+
+messages = ["This plane was flying to wonderland in a sunny day",
+    "The Sun and the gas giant planets like Jupiter are by far the largest \
+    objects in our Solar System.",
+    "This is me or you.",
+    "Dennis the menace!!!!!!!!"]
+prompt = "Mouse over the items in the image to see the different \
+    descriptions."
+
+writetext(prompt)
+
+for coord, msg in zip(coords, messages):
+    # define areas in the image
+    area = html.AREA(shape="rect", coords=coord)
+
+    # define actions when mouse moves over or out of the area
+    area.bind('mouseover', lambda ev, msg=msg:writetext(msg))
+    area.bind('mouseout', lambda ev:writetext(prompt))
+
+    document["familymap"] <= area
+</script>
+ 
+  </body>
+
+</html>
