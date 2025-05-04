@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.11.0/brython.min.js"></script>
+  </head>
+  <body onload="brython()">
+    <h2>Python Input Example</h2>
+    <input id="name_input" placeholder="Type your name" />
+    <button onclick="say_hello()">Say Hello</button>
+    <p id="output"></p>
+
+    <script type="text/python">
+      from browser import document
+
+      def say_hello(event=None):
+          name = document["name_input"].value
+          document["output"].text = f"Hello, {name}!"
+
+      document["name_input"].bind("keypress", lambda e: say_hello() if e.key == "Enter" else None)
+    </script>
+  </body>
+</html>
