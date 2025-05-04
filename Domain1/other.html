@@ -1,135 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Domain 1 - Python Workbook</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python Domain 1 - Workbook Prep</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; }
+    h1, h2 { color: #333; }
+    section { margin-bottom: 40px; }
+    textarea { width: 100%; height: 100px; margin-top: 10px; font-family: monospace; }
+    iframe { width: 100%; height: 400px; border: none; margin-top: 10px; }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-800 p-6">
-  <h1 class="text-4xl font-bold text-blue-900 mb-8">Domain 1: Python Workbook</h1>
+<body>
+  <h1>Domain 1: Python Programming Overview</h1>
+  <p>This editable workbook prep page helps you study for the IT Specialist Certification Exam in Python. Clone this page and modify each section with your notes and completed exercises.</p>
 
-  <!-- Reusable lesson block format -->
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-800">Lesson 1: Print Statement</h2>
-    <p class="mt-2">Use the <code class="bg-gray-200 px-1 rounded">print()</code> function to display text or values.</p>
-    <button class="mt-3 mb-2 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700" onclick="toggleCode(this)">View Raw Code</button>
-    <pre class="hidden bg-gray-100 p-4 rounded"><code>print("Hello, world!")</code></pre>
-    <iframe src="" class="w-full h-72 mt-4 border rounded" title="Lesson 1 Code"></iframe>
+  <section>
+    <h2>Lesson 1: What is Python?</h2>
+    <p>Python is a general-purpose, high-level programming language. It's known for readability and versatility.</p>
+    <label for="q1">In your own words, what are some uses for Python?</label>
+    <textarea id="q1"></textarea>
   </section>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-800">Lesson 2: Variables and Assignment</h2>
-    <p class="mt-2">Create variables to store data.</p>
-    <button class="mt-3 mb-2 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700" onclick="toggleCode(this)">View Raw Code</button>
-    <pre class="hidden bg-gray-100 p-4 rounded"><code>name = "Alice"
-age = 15</code></pre>
-    <iframe src="" class="w-full h-72 mt-4 border rounded" title="Lesson 2 Code"></iframe>
+  <section>
+    <h2>Lesson 2: Python Syntax and Structure</h2>
+    <p>Understand indentation, statements, variables, and data types.</p>
+    <label for="q2">Write a short Python script using variables and print statements:</label>
+    <textarea id="q2"></textarea>
+    <iframe src="https://trinket.io/embed/python3/0d3881a95a" allowfullscreen></iframe>
   </section>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-800">Lesson 3: Data Types</h2>
-    <p class="mt-2">Understand different data types: string, integer, float, boolean.</p>
-    <button class="mt-3 mb-2 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700" onclick="toggleCode(this)">View Raw Code</button>
-    <pre class="hidden bg-gray-100 p-4 rounded"><code>name = "Bob"      # string
-age = 17           # integer
-height = 5.9       # float
-is_student = True  # boolean</code></pre>
-    <iframe src="" class="w-full h-72 mt-4 border rounded" title="Lesson 3 Code"></iframe>
+  <section>
+    <h2>Lesson 3: IDEs and Tools</h2>
+    <p>Python can be run in IDLE, VS Code, online editors like Replit and Trinket, or in a terminal using the `python` command.</p>
+    <label for="q3">List the tools you've used so far to run Python:</label>
+    <textarea id="q3"></textarea>
   </section>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-800">Lesson 4: User Input</h2>
-    <p class="mt-2">Use <code class="bg-gray-200 px-1 rounded">input()</code> to get user input.</p>
-    <button class="mt-3 mb-2 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700" onclick="toggleCode(this)">View Raw Code</button>
-    <pre class="hidden bg-gray-100 p-4 rounded"><code>name = input("What is your name?")
-print("Hello, " + name)</code></pre>
-    <iframe src="" class="w-full h-72 mt-4 border rounded" title="Lesson 4 Code"></iframe>
+  <section>
+    <h2>Lesson 4: Running and Debugging Code</h2>
+    <p>Debugging includes checking syntax, logic, and runtime errors.</p>
+    <label for="q4">Describe how you would debug a Python program that doesn't run:</label>
+    <textarea id="q4"></textarea>
+    <iframe src="https://trinket.io/embed/python3/6a7aa0f2b0" allowfullscreen></iframe>
   </section>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-800">Lesson 5: Comments</h2>
-    <p class="mt-2">Use <code class="bg-gray-200 px-1 rounded">#</code> to write comments in Python.</p>
-    <button class="mt-3 mb-2 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700" onclick="toggleCode(this)">View Raw Code</button>
-    <pre class="hidden bg-gray-100 p-4 rounded"><code># This is a comment
-print("Hello")  # This prints hello</code></pre>
-    <iframe src="" class="w-full h-72 mt-4 border rounded" title="Lesson 5 Code"></iframe>
+  <section>
+    <h2>Lesson 5: Variables and Data Types</h2>
+    <p>Variables store data values. Common types include strings, integers, floats, and booleans.</p>
+    <label for="q5">Create and print variables of at least three different data types:</label>
+    <textarea id="q5"></textarea>
+    <iframe src="https://trinket.io/embed/python3/fc9aefc504" allowfullscreen></iframe>
   </section>
 
-  <!-- Lesson 6 -->
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-800">Lesson 6: Conditionals</h2>
-    <p class="mt-2">Learn how to use <code class="bg-gray-200 px-1 rounded">if</code>, <code class="bg-gray-200 px-1 rounded">elif</code>, and <code class="bg-gray-200 px-1 rounded">else</code> to control the flow of your program.</p>
-    <div class="bg-white shadow border border-gray-200 rounded p-4 mt-4">
-      <h3 class="font-semibold text-lg">Activity: Write a Conditional Statement</h3>
-      <p>Write a Python program that checks if a number is positive, negative, or zero.</p>
-      <iframe src="https://trinket.io/embed/python/your-link-here" class="w-full h-72 mt-4 border rounded"></iframe>
-    </div>
-    <div class="bg-white shadow border border-gray-200 rounded p-4 mt-4">
-      <h3 class="font-semibold text-lg">Quick Quiz:</h3>
-      <p>What keyword is used to check multiple conditions?</p>
-      <input type="text" placeholder="Type your answer here" class="w-full border mt-2 p-2 rounded"/>
-    </div>
+  <section>
+    <h2>Lesson 6: User Input</h2>
+    <p>You can get input from users using the <code>input()</code> function.</p>
+    <label for="q6">Write a script that asks for a name and age, then prints a greeting:</label>
+    <textarea id="q6"></textarea>
+    <iframe src="https://trinket.io/embed/python3/61c509e803" allowfullscreen></iframe>
   </section>
 
-  <!-- Repeat format for Lessons 7-9 -->
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-800">Lesson 7: Loops</h2>
-    <p class="mt-2">Use <code class="bg-gray-200 px-1 rounded">for</code> and <code class="bg-gray-200 px-1 rounded">while</code> loops to repeat actions.</p>
-    <div class="bg-white shadow border border-gray-200 rounded p-4 mt-4">
-      <h3 class="font-semibold text-lg">Activity: Loop Through a Range</h3>
-      <p>Print the numbers from 1 to 10 using a loop.</p>
-      <iframe src="https://trinket.io/embed/python/your-link-here" class="w-full h-72 mt-4 border rounded"></iframe>
-    </div>
-    <div class="bg-white shadow border border-gray-200 rounded p-4 mt-4">
-      <h3 class="font-semibold text-lg">Quick Quiz:</h3>
-      <p>Which loop should you use when the number of repetitions is unknown?</p>
-      <input type="text" placeholder="Type your answer here" class="w-full border mt-2 p-2 rounded"/>
-    </div>
+  <section>
+    <h2>Lesson 7: Arithmetic and Operators</h2>
+    <p>Use arithmetic operators like +, -, *, /, %, and ** for calculations.</p>
+    <label for="q7">Create a simple calculator that performs basic math:</label>
+    <textarea id="q7"></textarea>
+    <iframe src="https://trinket.io/embed/python3/aa1e91cfe3" allowfullscreen></iframe>
   </section>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-800">Lesson 8: Functions</h2>
-    <p class="mt-2">Learn how to create and use functions to organize your code.</p>
-    <div class="bg-white shadow border border-gray-200 rounded p-4 mt-4">
-      <h3 class="font-semibold text-lg">Activity: Define a Function</h3>
-      <p>Create a function that takes a name as an argument and prints a greeting.</p>
-      <iframe src="https://trinket.io/embed/python/your-link-here" class="w-full h-72 mt-4 border rounded"></iframe>
-    </div>
-    <div class="bg-white shadow border border-gray-200 rounded p-4 mt-4">
-      <h3 class="font-semibold text-lg">Quick Quiz:</h3>
-      <p>What keyword is used to define a function in Python?</p>
-      <input type="text" placeholder="Type your answer here" class="w-full border mt-2 p-2 rounded"/>
-    </div>
+  <section>
+    <h2>Lesson 8: Conditionals</h2>
+    <p>Use <code>if</code>, <code>elif</code>, and <code>else</code> to control the flow of your code based on conditions.</p>
+    <label for="q8">Write a program that checks if a number is positive, negative, or zero:</label>
+    <textarea id="q8"></textarea>
+    <iframe src="https://trinket.io/embed/python3/59dbf3d184" allowfullscreen></iframe>
   </section>
 
-  <section class="mb-10">
-    <h2 class="text-2xl font-semibold text-gray-800">Lesson 9: Debugging</h2>
-    <p class="mt-2">Learn how to identify and fix errors in your Python code.</p>
-    <div class="bg-white shadow border border-gray-200 rounded p-4 mt-4">
-      <h3 class="font-semibold text-lg">Activity: Debug This Code</h3>
-      <p>Find and fix the error in this Python snippet:</p>
-      <pre class="bg-gray-100 p-4 rounded mt-2"><code>print("Hello!)</code></pre>
-      <iframe src="https://trinket.io/embed/python/your-link-here" class="w-full h-72 mt-4 border rounded"></iframe>
-    </div>
-    <div class="bg-white shadow border border-gray-200 rounded p-4 mt-4">
-      <h3 class="font-semibold text-lg">Quick Quiz:</h3>
-      <p>What type of error occurs when Python doesn't understand your code at all?</p>
-      <input type="text" placeholder="Type your answer here" class="w-full border mt-2 p-2 rounded"/>
-    </div>
+  <section>
+    <h2>Lesson 9: While Loops</h2>
+    <p>Loops let you repeat code. A <code>while</code> loop runs as long as a condition is true.</p>
+    <label for="q9">Write a loop that counts from 1 to 5:</label>
+    <textarea id="q9"></textarea>
+    <iframe src="https://trinket.io/embed/python3/4b24aa4737" allowfullscreen></iframe>
   </section>
 
-  <script>
-    function toggleCode(button) {
-      const pre = button.nextElementSibling;
-      if (pre.classList.contains("hidden")) {
-        pre.classList.remove("hidden");
-        button.textContent = "Hide Raw Code";
-      } else {
-        pre.classList.add("hidden");
-        button.textContent = "View Raw Code";
-      }
-    }
-  </script>
+  <footer>
+    <p>Created for IT Specialist Exam prep – Domain 1. Clone and make it your own.</p>
+  </footer>
 </body>
 </html>
