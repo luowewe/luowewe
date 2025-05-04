@@ -1,22 +1,33 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.11.0/brython.min.js"></script>
-  </head>
-  <body onload="brython()">
-    <h2>Python Input Example</h2>
-    <input id="name_input" placeholder="Type your name" />
-    <button onclick="say_hello()">Say Hello</button>
-    <p id="output"></p>
-
-    <script type="text/python">
-      from browser import document
-
-      def say_hello(event=None):
-          name = document["name_input"].value
-          document["output"].text = f"Hello, {name}!"
-
-      document["name_input"].bind("keypress", lambda e: say_hello() if e.key == "Enter" else None)
-    </script>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Domain 1: Inputs & Outputs</title>
+  <link rel="stylesheet" href="../assets/style.css"/>
+</head>
+<body>
+  <h1>Domain 1: Inputs and Outputs</h1>
+  <p>In this domain, you'll learn to get information from the user and display results using <code>print()</code> and <code>input()</code>.</p>
+  
+  <h2>🎯 Objective</h2>
+  <p>Use input and output functions in Python to build basic interactive programs.</p>
+  
+  <h2>📝 Exercise</h2>
+  <pre><code># Ask for the user's name and greet them
+name = input("What is your name? ")
+print("Hello, " + name + "!")
+  </code></pre>
+  
+  <h2>✅ Task</h2>
+  <ol>
+    <li>Run the code above.</li>
+    <li>Modify it to also ask for age and favorite color.</li>
+    <li>Print a sentence that uses all three answers.</li>
+  </ol>
+  
+  <h2>💬 Reflection</h2>
+  <p>What challenges did you face with input or concatenation?</p>
+  <textarea rows="4" cols="50" placeholder="Type your response here..."></textarea>
+</body>
 </html>
