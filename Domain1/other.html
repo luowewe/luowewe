@@ -54,7 +54,7 @@
   </div>
 </section>
 
-<!-- LESSON 2 -->
+<!-- LESSON 1.1 -->
 <section id="lesson2" class="bg-white p-6 rounded-xl shadow-lg mb-10">
   <h2 class="text-2xl font-bold text-indigo-600 mb-4">Lesson 2: Strings and Integers</h2>
 
@@ -164,22 +164,79 @@
 </section>
 
 
-    <!-- LESSON 2 -->
-    <section id="lesson2" class="bg-white p-6 rounded-xl shadow-lg mb-10">
-      <h2 class="text-2xl font-bold text-indigo-600 mb-4">Lesson 2: Variables</h2>
-      <p class="mb-4 text-gray-700">Variables are used to store information. You can name a variable and assign it a value using the <code>=</code> sign.</p>
-      <div class="bg-indigo-50 p-4 rounded-md mb-4">
-        <h3 class="text-xl font-semibold text-indigo-800">🎯 Learning Target</h3>
-        <p>I can store and reuse data in variables.</p>
-      </div>
-      <pre class="bg-gray-100 p-4 rounded-md text-sm mb-4"><code>name = "Ava"
+<!-- LESSON 2 -->
+<section id="lesson2" class="bg-white p-6 rounded-xl shadow-lg mb-10">
+  <h2 class="text-2xl font-bold text-indigo-600 mb-4">Lesson 2: Variables</h2>
+  <p class="mb-4 text-gray-700">
+    Variables are used to store information. You can name a variable and assign it a value using the <code>=</code> sign.
+  </p>
+  <div class="bg-indigo-50 p-4 rounded-md mb-4">
+    <h3 class="text-xl font-semibold text-indigo-800">🎯 Learning Target</h3>
+    <p>I can store and reuse data in variables.</p>
+  </div>
+  <pre class="bg-gray-100 p-4 rounded-md text-sm mb-4"><code>name = "Ava"
 print("Hi " + name)</code></pre>
-      <div class="mb-6">
-        <h3 class="text-xl font-semibold text-indigo-700 mb-2">✏️ Your Turn</h3>
-        <p>Create a variable for your favorite movie or show. Then print a message with it.</p>
-        <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="350" frameborder="0" allowfullscreen class="rounded"></iframe>
-      </div>
-    </section>
+  <div class="mb-6">
+    <h3 class="text-xl font-semibold text-indigo-700 mb-2">✏️ Your Turn</h3>
+    <p>Create a variable for your favorite movie or show. Then print a message with it.</p>
+    <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="350" frameborder="0" allowfullscreen class="rounded"></iframe>
+  </div>
+</section>
+
+<!-- LESSON: Floats and Booleans -->
+<section id="lesson-floats-bools" class="bg-white p-6 rounded-xl shadow-lg mb-10">
+  <h2 class="text-2xl font-bold text-indigo-600 mb-4">Lesson: Floats and Booleans</h2>
+
+  <p class="mb-4 text-gray-700">
+    Floats and booleans are additional data types in Python. While <strong>integers</strong> represent whole numbers, 
+    <strong>floats</strong> (short for "floating point numbers") are numbers with decimals, like <code>3.14</code> or <code>0.75</code>.
+    The <strong>boolean</strong> (or <code>bool</code>) data type only has two values: <code>True</code> or <code>False</code>. 
+    These are often used to control game logic, such as whether a player is alive or has won.
+  </p>
+
+  <div class="bg-indigo-50 p-4 rounded-md mb-4">
+    <h3 class="text-xl font-semibold text-indigo-800">🎯 Learning Target</h3>
+    <p>I can use floats and booleans in basic operations and identify their data types in Python.</p>
+  </div>
+
+  <h3 class="text-xl font-semibold text-indigo-700 mb-2">⚙️ Steps for Completion</h3>
+  <ol class="list-decimal list-inside space-y-2 text-gray-800 mb-6">
+    <li>Open the <code class="bg-gray-100 px-1 rounded">113-numbers.py</code> file from your Domain 1 Student folder.</li>
+    <li>Observe that the variable <code>multiplier</code> on line 2 is a float.</li>
+    <li>Add a <code>print</code> statement on line 4 that calculates <code>number_of_tries + multiplier</code>. Run the code.</li>
+    <li>
+      What data type is returned from this addition?<br />
+      <textarea placeholder="Your answer..." class="w-full p-2 border border-gray-300 rounded"></textarea>
+    </li>
+    <li>Change the operator to <code>/</code> (division) and run the code again.</li>
+    <li>
+      What data type is returned now?<br />
+      <textarea placeholder="Your answer..." class="w-full p-2 border border-gray-300 rounded"></textarea>
+    </li>
+    <li>Save the updated file as <code class="bg-gray-100 px-1 rounded">113-numbers-completed.py</code>.</li>
+    <li>Floats are useful for tracking scores, currency, and measurements in games.</li>
+    <li>Open the <code class="bg-gray-100 px-1 rounded">114-boolean.py</code> file.</li>
+    <li>Check out the <code>char_life</code> variable. It’s set to <code>True</code>. Run the code to see what it does.</li>
+    <li>Save the file as <code class="bg-gray-100 px-1 rounded">114-boolean-completed.py</code>.</li>
+    <li>⚠️ Reminder: Python is case-sensitive. Booleans must use capital <code>True</code> and <code>False</code>.</li>
+  </ol>
+
+  <h3 class="text-xl font-semibold text-indigo-700 mb-2">📁 Project Details</h3>
+  <ul class="list-disc list-inside mb-6 text-gray-700">
+    <li><strong>Files:</strong> 113-numbers.py, 114-boolean.py</li>
+    <li><strong>Time:</strong> 10–15 minutes</li>
+    <li><strong>Video Reference:</strong> Domain 1 – Data Types: float and bool</li>
+  </ul>
+
+  <h3 class="text-xl font-semibold text-indigo-700 mb-2">📌 Objectives Covered</h3>
+  <ul class="list-disc list-inside text-gray-700">
+    <li>1.1 Evaluate expressions to identify the data types Python assigns to variables</li>
+    <li>1.1.3 float</li>
+    <li>1.1.4 bool</li>
+  </ul>
+
+  <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="350" frameborder="0" allowfullscreen class="rounded mt-6"></iframe>
+</section>
 
     <!-- LESSON 3 -->
     <section id="lesson3"  class="bg-white p-6 rounded-xl shadow-lg mb-10">
