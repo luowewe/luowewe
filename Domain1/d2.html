@@ -3,170 +3,122 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Python Workbook - Domain 2</title>
+  <title>Domain 2: Data Types and Variables</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 text-gray-800 leading-relaxed">
-  <header class="sticky top-0 z-50 bg-white shadow-md">
-    <nav class="container mx-auto flex flex-wrap items-center justify-between p-4">
-      <h1 class="text-2xl font-bold">Python Workbook: Domain 2</h1>
-      <ul class="flex gap-4 text-blue-600 font-semibold">
-        <li><a href="#lesson10">Lesson 10</a></li>
-        <li><a href="#lesson11">Lesson 11</a></li>
-        <li><a href="#lesson12">Lesson 12</a></li>
-        <li><a href="#lesson13">Lesson 13</a></li>
-        <li><a href="#lesson14">Lesson 14</a></li>
-        <li><a href="#lesson15">Lesson 15</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="container mx-auto px-4 py-8">
-    <!-- LESSON 10 -->
-    <section id="lesson10" class="mb-16">
-      <h2 class="text-3xl font-bold text-blue-700 mb-2">Lesson 10: Output</h2>
-      <p class="mb-4">In this lesson, you'll learn how to use the <code>print()</code> function to send messages to the user. This is your main way of showing results or feedback in a Python program.</p>
-
-      <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 mb-4">
-        🎯 <strong>Learning Target:</strong> I can display output to the screen using <code>print()</code>.
-      </div>
-
-      <h3 class="text-xl font-semibold text-gray-700 mb-2">💡 Example:</h3>
-      <pre class="bg-gray-800 text-white p-4 rounded mb-4 overflow-x-auto">
-print("Hello, world!")
-print("The answer is", 42)
-print("Let's learn Python together!")
-      </pre>
-
-      <h3 class="text-xl font-semibold text-gray-700 mb-2">✏️ Your Turn:</h3>
-      <ol class="list-decimal ml-6 mb-4">
-        <li>Write a program that prints a greeting to the user.</li>
-        <li>Print your favorite quote.</li>
-        <li>Print a message that includes both text and numbers.</li>
-      </ol>
-      <iframe src="https://trinket.io/embed/python/placeholder" width="100%" height="350" frameborder="0" allowfullscreen class="border rounded"></iframe>
-    </section>
-    <!-- LESSON 11 -->
-    <section id="lesson11" class="mb-16">
-      <h2 class="text-3xl font-bold text-blue-700 mb-2">Lesson 11: Input</h2>
-      <p class="mb-4">You're ready to talk to your computer! The <code>input()</code> function allows users to enter information while the program runs.</p>
-
-      <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 mb-4">
-        🎯 <strong>Learning Target:</strong> I can get input from a user using <code>input()</code>.
-      </div>
-
-      <h3 class="text-xl font-semibold text-gray-700 mb-2">💡 Example:</h3>
-      <pre class="bg-gray-800 text-white p-4 rounded mb-4 overflow-x-auto">
-name = input("What's your name? ")
-print("Hello,", name)
-      </pre>
-
-      <h3 class="text-xl font-semibold text-gray-700 mb-2">✏️ Your Turn:</h3>
-      <ol class="list-decimal ml-6 mb-4">
-        <li>Ask the user for their favorite food and print a message about it.</li>
-        <li>Ask the user where they are from and respond with a greeting.</li>
-      </ol>
-      <iframe src="https://trinket.io/embed/python/placeholder" width="100%" height="350" frameborder="0" allowfullscreen class="border rounded"></iframe>
-    </section>
-
-    <!-- LESSON 12 -->
-    <section id="lesson12" class="mb-16">
-      <h2 class="text-3xl font-bold text-blue-700 mb-2">Lesson 12: Comments</h2>
-      <p class="mb-4">Comments are notes you leave for yourself (or other coders). Python ignores them when your code runs.</p>
-
-      <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 mb-4">
-        🎯 <strong>Learning Target:</strong> I can write comments using <code>#</code> in my code.
-      </div>
-
-      <h3 class="text-xl font-semibold text-gray-700 mb-2">💡 Example:</h3>
-      <pre class="bg-gray-800 text-white p-4 rounded mb-4 overflow-x-auto">
-# This line says hello to the user
-print("Hello!")
-
-# The next line prints the user's favorite number
-print("I like the number", 7)
-      </pre>
-
-      <h3 class="text-xl font-semibold text-gray-700 mb-2">✏️ Your Turn:</h3>
-      <ol class="list-decimal ml-6 mb-4">
-        <li>Add comments above two different <code>print()</code> statements.</li>
-        <li>Write a short program with at least three lines of comments explaining what’s happening.</li>
-      </ol>
-      <iframe src="https://trinket.io/embed/python/placeholder" width="100%" height="350" frameborder="0" allowfullscreen class="border rounded"></iframe>
-    </section>
-
-    <!-- LESSON 13 -->
-    <section id="lesson13" class="mb-16">
-      <h2 class="text-3xl font-bold text-blue-700 mb-2">Lesson 13: Escape Characters</h2>
-      <p class="mb-4">Sometimes you want to include special characters in your text like quotes or line breaks. That’s where escape characters come in!</p>
-
-      <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 mb-4">
-        🎯 <strong>Learning Target:</strong> I can use escape characters like <code>\n</code> and <code>\t</code> to format strings.
-      </div>
-
-      <h3 class="text-xl font-semibold text-gray-700 mb-2">💡 Example:</h3>
-      <pre class="bg-gray-800 text-white p-4 rounded mb-4 overflow-x-auto">
-print("She said, \"Python is fun!\"")
-print("First line\nSecond line")
-print("Item\tPrice")
-      </pre>
-
-      <h3 class="text-xl font-semibold text-gray-700 mb-2">✏️ Your Turn:</h3>
-      <ol class="list-decimal ml-6 mb-4">
-        <li>Print a sentence with double quotes inside it.</li>
-        <li>Use <code>\n</code> to print text on two lines.</li>
-        <li>Use <code>\t</code> to space out items in a list.</li>
-      </ol>
-      <iframe src="https://trinket.io/embed/python/placeholder" width="100%" height="350" frameborder="0" allowfullscreen class="border rounded"></iframe>
-    </section>
+<body class="bg-gray-50 text-gray-800 font-sans p-6">
+  <main class="max-w-4xl mx-auto space-y-10">
 
     <!-- LESSON 14 -->
-    <section id="lesson14" class="mb-16">
-      <h2 class="text-3xl font-bold text-blue-700 mb-2">Lesson 14: String Concatenation</h2>
-      <p class="mb-4">You can combine strings using <code>+</code>. This is called concatenation. It’s great for building dynamic messages!</p>
-
-      <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 mb-4">
-        🎯 <strong>Learning Target:</strong> I can combine strings using <code>+</code>.
-      </div>
-
-      <h3 class="text-xl font-semibold text-gray-700 mb-2">💡 Example:</h3>
-      <pre class="bg-gray-800 text-white p-4 rounded mb-4 overflow-x-auto">
-first_name = "Ada"
-last_name = "Lovelace"
-full_name = first_name + " " + last_name
-print("Hello,", full_name)
+    <section class="bg-white p-6 rounded shadow">
+      <h2 class="text-2xl font-bold mb-4">Lesson 14: What is a Data Type?</h2>
+      <p class="mb-4">Data types tell Python what kind of data we are working with. Common types include:</p>
+      <ul class="list-disc list-inside mb-4">
+        <li><code>int</code> - integers (whole numbers)</li>
+        <li><code>float</code> - decimal numbers</li>
+        <li><code>str</code> - strings (text)</li>
+        <li><code>bool</code> - booleans (True or False)</li>
+      </ul>
+      <p class="mb-2">Try using <code>type()</code> to check the data type:</p>
+      <pre class="bg-gray-100 p-4 rounded mb-4">
+print(type(5))       # ➜ <class 'int'>
+print(type(3.14))    # ➜ <class 'float'>
+print(type("hi"))    # ➜ <class 'str'>
+print(type(True))    # ➜ <class 'bool'>
       </pre>
-
-      <h3 class="text-xl font-semibold text-gray-700 mb-2">✏️ Your Turn:</h3>
-      <ol class="list-decimal ml-6 mb-4">
-        <li>Ask the user for their first and last name and print their full name.</li>
-        <li>Make a sentence using at least two string variables and <code>+</code>.</li>
-      </ol>
-      <iframe src="https://trinket.io/embed/python/placeholder" width="100%" height="350" frameborder="0" allowfullscreen class="border rounded"></iframe>
+      <p class="mb-2">Your code:</p>
+      <iframe src="https://trinket.io/embed/python/PLACEHOLDER" width="100%" height="200"></iframe>
     </section>
 
     <!-- LESSON 15 -->
-    <section id="lesson15" class="mb-16">
-      <h2 class="text-3xl font-bold text-blue-700 mb-2">Lesson 15: String Repetition</h2>
-      <p class="mb-4">Want to repeat a word or symbol several times? Python lets you multiply strings!</p>
-
-      <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 mb-4">
-        🎯 <strong>Learning Target:</strong> I can repeat a string using <code>*</code>.
-      </div>
-
-      <h3 class="text-xl font-semibold text-gray-700 mb-2">💡 Example:</h3>
-      <pre class="bg-gray-800 text-white p-4 rounded mb-4 overflow-x-auto">
-print("ha" * 3)     # prints 'hahaha'
-print("-" * 10)     # prints '----------'
+    <section class="bg-white p-6 rounded shadow">
+      <h2 class="text-2xl font-bold mb-4">Lesson 15: Python is Strongly and Dynamically Typed</h2>
+      <p class="mb-4">Python automatically figures out the data type, but it doesn't let you mix incompatible types.</p>
+      <p class="mb-2">What happens when we try to add an integer and a string?</p>
+      <pre class="bg-gray-100 p-4 rounded mb-4">
+x = 5
+y = "7"
+print(x + y)  # ❌ This will cause a TypeError
       </pre>
-
-      <h3 class="text-xl font-semibold text-gray-700 mb-2">✏️ Your Turn:</h3>
-      <ol class="list-decimal ml-6 mb-4">
-        <li>Print a funny sound repeated multiple times.</li>
-        <li>Create a line break using symbols (like <code>-</code> or <code>*</code>).</li>
-      </ol>
-      <iframe src="https://trinket.io/embed/python/placeholder" width="100%" height="350" frameborder="0" allowfullscreen class="border rounded"></iframe>
+      <p class="mb-2">Fix it by converting the string to an integer:</p>
+      <pre class="bg-gray-100 p-4 rounded mb-4">
+print(x + int(y))  # ✅ 12
+      </pre>
+      <iframe src="https://trinket.io/embed/python/PLACEHOLDER" width="100%" height="200"></iframe>
     </section>
+
+    <!-- LESSON 16 -->
+    <section class="bg-white p-6 rounded shadow">
+      <h2 class="text-2xl font-bold mb-4">Lesson 16: What is a Variable?</h2>
+      <p class="mb-4">Variables are names that store values. You can use them to store data and refer back to it later.</p>
+      <pre class="bg-gray-100 p-4 rounded mb-4">
+name = "Luna"
+age = 14
+gpa = 3.8
+print(name, "is", age, "years old with a GPA of", gpa)
+      </pre>
+      <p class="mb-2">What variables can you create about yourself?</p>
+      <iframe src="https://trinket.io/embed/python/PLACEHOLDER" width="100%" height="200"></iframe>
+    </section>
+
+    <!-- LESSON 17 -->
+    <section class="bg-white p-6 rounded shadow">
+      <h2 class="text-2xl font-bold mb-4">Lesson 17: Variable Naming Rules</h2>
+      <p class="mb-4">Variable names:</p>
+      <ul class="list-disc list-inside mb-4">
+        <li>Must start with a letter or underscore</li>
+        <li>Can include letters, numbers, and underscores</li>
+        <li>Cannot be a Python keyword like <code>if</code>, <code>else</code>, <code>while</code>, etc.</li>
+      </ul>
+      <pre class="bg-gray-100 p-4 rounded mb-4">
+first_name = "Alex"
+_lastName = "Rivera"
+score2 = 98
+2score = 99  # ❌ Invalid
+      </pre>
+      <p>Try creating your own valid and invalid variable names:</p>
+      <iframe src="https://trinket.io/embed/python/PLACEHOLDER" width="100%" height="200"></iframe>
+    </section>
+
+    <!-- LESSON 18 -->
+    <section class="bg-white p-6 rounded shadow">
+      <h2 class="text-2xl font-bold mb-4">Lesson 18: Storing and Reassigning Data</h2>
+      <p class="mb-4">You can change a variable’s value later in your program:</p>
+      <pre class="bg-gray-100 p-4 rounded mb-4">
+count = 5
+print(count)
+count = count + 3
+print(count)  # Output: 8
+      </pre>
+      <p>Try making a variable and changing its value:</p>
+      <iframe src="https://trinket.io/embed/python/PLACEHOLDER" width="100%" height="200"></iframe>
+    </section>
+
+    <!-- LESSON 19 -->
+    <section class="bg-white p-6 rounded shadow">
+      <h2 class="text-2xl font-bold mb-4">Lesson 19: The print() Function</h2>
+      <p class="mb-4">Use <code>print()</code> to show output on the screen. You can print numbers, strings, or variables.</p>
+      <pre class="bg-gray-100 p-4 rounded mb-4">
+print("Hello world!")
+name = "Derek"
+print("Hi", name)
+      </pre>
+      <p class="mb-2">Write a print statement that uses variables:</p>
+      <iframe src="https://trinket.io/embed/python/PLACEHOLDER" width="100%" height="200"></iframe>
+    </section>
+
+    <!-- LESSON 20 -->
+    <section class="bg-white p-6 rounded shadow">
+      <h2 class="text-2xl font-bold mb-4">Lesson 20: The input() Function</h2>
+      <p class="mb-4">Use <code>input()</code> to ask the user for data:</p>
+      <pre class="bg-gray-100 p-4 rounded mb-4">
+name = input("What is your name? ")
+print("Hello,", name + "!")
+      </pre>
+      <p>Make a mini-interview program that asks at least two questions:</p>
+      <iframe src="https://trinket.io/embed/python/PLACEHOLDER" width="100%" height="200"></iframe>
+    </section>
+
   </main>
 </body>
 </html>
