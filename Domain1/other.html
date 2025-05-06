@@ -425,21 +425,123 @@ city3 = "Houston"</code>
 
 
     <!-- LESSON 5 -->
-    <section id="lesson5"  class="bg-white p-6 rounded-xl shadow-lg mb-10">
-      <h2 class="text-2xl font-bold text-indigo-600 mb-4">Lesson 5: String + Number</h2>
-      <p class="mb-4 text-gray-700">You can use <code>str()</code> to convert numbers into strings so they can be combined with text.</p>
-      <div class="bg-indigo-50 p-4 rounded-md mb-4">
-        <h3 class="text-xl font-semibold text-indigo-800">🎯 Learning Target</h3>
-        <p>I can display numbers in sentences using <code>str()</code>.</p>
-      </div>
-      <pre class="bg-gray-100 p-4 rounded-md text-sm mb-4"><code>age = 12
-print("I am " + str(age) + " years old.")</code></pre>
-      <div class="mb-6">
-        <h3 class="text-xl font-semibold text-indigo-700 mb-2">✏️ Your Turn</h3>
-        <p>Create a variable for a number, convert it to a string, and print it in a sentence.</p>
-        <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="350" frameborder="0" allowfullscreen class="rounded"></iframe>
-      </div>
-    </section>
+
+   <!-- LESSON 5: String + Number -->
+<section id="lesson5" class="bg-white p-6 rounded-xl shadow-lg mb-10">
+  <h2 class="text-2xl font-bold text-indigo-600 mb-4">Lesson 5: String + Number</h2>
+  <p class="mb-4 text-gray-700">
+    You can use <code>str()</code> to convert numbers into strings so they can be combined with text.
+  </p>
+
+  <div class="bg-indigo-50 p-4 rounded-md mb-4">
+    <h3 class="text-xl font-semibold text-indigo-800">🎯 Learning Target</h3>
+    <p>I can display numbers in sentences using <code>str()</code>.</p>
+  </div>
+
+  <pre class="bg-gray-100 p-4 rounded-md text-sm mb-4">
+<code>age = 12
+print("I am " + str(age) + " years old.")</code>
+  </pre>
+
+  <div class="mb-6">
+    <h3 class="text-xl font-semibold text-indigo-700 mb-2">✏️ Your Turn</h3>
+    <p>Create a variable for a number, convert it to a string, and print it in a sentence.</p>
+    <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="350" frameborder="0" allowfullscreen class="rounded"></iframe>
+  </div>
+</section>
+
+<!-- LESSON: Assignment, Comparison, and Logical Operators -->
+<section id="lesson-operators" class="bg-white p-6 rounded-xl shadow-lg mb-10">
+  <h2 class="text-2xl font-bold text-indigo-600 mb-4">Lesson: Assignment, Comparison & Logical Operators</h2>
+
+  <!-- ASSIGNMENT OPERATORS -->
+  <div class="mb-6">
+    <h3 class="text-xl font-semibold text-indigo-700 mb-2">🟢 Assignment Operators</h3>
+    <p class="text-gray-700 mb-4">
+      Operators perform calculations and evaluate conditions. The six main types in Python are arithmetic, containment, comparison, identity, logical, and assignment. Assignment operators are used to set values to variables.
+    </p>
+
+    <div class="bg-indigo-50 p-4 rounded-md mb-4">
+      <h4 class="text-lg font-semibold text-indigo-800 mb-1">🎯 Purpose</h4>
+      <p>Understand how assignment operators work and in what sequence they are executed.</p>
+    </div>
+
+    <h4 class="font-semibold text-gray-800 mb-2">📝 Steps for Completion</h4>
+    <ol class="list-decimal list-inside text-gray-800 mb-4">
+      <li>Name the six types of operators in the order of execution.</li>
+      <li>Review the code and answer the following:
+        <ul class="list-disc list-inside ml-6">
+          <li>What will happen when this code is run?</li>
+        </ul>
+      </li>
+    </ol>
+
+    <div class="bg-yellow-50 p-4 rounded-md">
+      <h4 class="text-lg font-semibold text-yellow-700 mb-1">📌 Notes for Teachers</h4>
+      <ul class="list-disc list-inside text-gray-800">
+        <li>Explain that variables take the most recent value assigned.</li>
+        <li>The variable on the left side of <code>=</code> is set to the value on the right side.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- COMPARISON OPERATORS -->
+  <div class="mb-6">
+    <h3 class="text-xl font-semibold text-indigo-700 mb-2">🟣 Comparison Operators</h3>
+    <p class="text-gray-700 mb-4">
+      Comparison operators compare two values: equal to, not equal to, less than, greater than, less than or equal to, and greater than or equal to. They help determine whether a condition is met.
+    </p>
+
+    <div class="bg-indigo-50 p-4 rounded-md mb-4">
+      <h4 class="text-lg font-semibold text-indigo-800 mb-1">🎯 Purpose</h4>
+      <p>Understand how Python uses comparison operators to evaluate expressions.</p>
+    </div>
+
+    <h4 class="font-semibold text-gray-800 mb-2">📝 Steps for Completion</h4>
+    <ol class="list-decimal list-inside text-gray-800 mb-4">
+      <li>What type of value do comparisons return?</li>
+      <li>In what sequence are comparisons evaluated?</li>
+      <li>What happens if part of a comparison is false?</li>
+    </ol>
+  </div>
+
+  <!-- LOGICAL OPERATORS -->
+  <div>
+    <h3 class="text-xl font-semibold text-indigo-700 mb-2">🔵 Logical Operators</h3>
+    <p class="text-gray-700 mb-4">
+      Logical operators in Python include <code>not</code>, <code>and</code>, and <code>or</code>. These operators follow a specific order of precedence and are essential for controlling flow based on multiple conditions.
+    </p>
+
+    <div class="bg-indigo-50 p-4 rounded-md mb-4">
+      <h4 class="text-lg font-semibold text-indigo-800 mb-1">🎯 Purpose</h4>
+      <p>Learn how logical operators influence the flow of logic in code.</p>
+    </div>
+
+    <h4 class="font-semibold text-gray-800 mb-2">📝 Steps for Completion</h4>
+    <ol class="list-decimal list-inside text-gray-800 mb-4">
+      <li>List the logical keywords in order of precedence:
+        <ul class="list-disc list-inside ml-6">
+          <li>a. <span class="font-semibold text-gray-600">______</span></li>
+          <li>b. <span class="font-semibold text-gray-600">______</span></li>
+          <li>c. <span class="font-semibold text-gray-600">______</span></li>
+        </ul>
+      </li>
+      <li>Review the code and answer the following:
+        <ul class="list-disc list-inside ml-6">
+          <li>What will happen when this code is run?</li>
+        </ul>
+      </li>
+    </ol>
+
+    <div class="bg-yellow-50 p-4 rounded-md">
+      <h4 class="text-lg font-semibold text-yellow-700 mb-1">📌 Notes for Teachers</h4>
+      <ul class="list-disc list-inside text-gray-800">
+        <li>If time permits, share additional examples of logical operators in Python code.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 
     <!-- LESSON 6 -->
     <section  id="lesson6"  class="bg-white p-6 rounded-xl shadow-lg mb-10">
