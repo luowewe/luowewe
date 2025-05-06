@@ -332,22 +332,97 @@ print(a + b)</code>
 
 
     <!-- LESSON 4 -->
-    <section  id="lesson4" class="bg-white p-6 rounded-xl shadow-lg mb-10">
-      <h2 class="text-2xl font-bold text-indigo-600 mb-4">Lesson 4: Strings</h2>
-      <p class="mb-4 text-gray-700">Strings are words or text enclosed in quotes. You can combine strings using <code>+</code>.</p>
-      <div class="bg-indigo-50 p-4 rounded-md mb-4">
-        <h3 class="text-xl font-semibold text-indigo-800">🎯 Learning Target</h3>
-        <p>I can use and combine strings in Python.</p>
-      </div>
-      <pre class="bg-gray-100 p-4 rounded-md text-sm mb-4"><code>first = "Good"
-second = "morning"
-print(first + " " + second)</code></pre>
-      <div class="mb-6">
-        <h3 class="text-xl font-semibold text-indigo-700 mb-2">✏️ Your Turn</h3>
-        <p>Combine three string variables into one sentence.</p>
-        <iframe src="PASTE_YOUR_TRINKET_LINK_HERE" width="100%" height="350" frameborder="0" allowfullscreen class="rounded"></iframe>
-      </div>
-    </section>
+<!-- LESSON: Lists and Their Operations -->
+<section id="lesson4" class="bg-white p-6 rounded-xl shadow-lg mb-10">
+  <h2 class="text-2xl font-bold text-indigo-600 mb-4">Lesson: Lists and Their Operations</h2>
+
+  <p class="mb-4 text-gray-700">
+    A list is a collection of items stored in a specific order. Instead of creating a separate variable for each value, you can store them all in one list. Lists can grow and change using built-in methods like <code>.append()</code> and <code>.insert()</code>.
+  </p>
+
+  <div class="bg-indigo-50 p-4 rounded-md mb-6">
+    <h3 class="text-xl font-semibold text-indigo-800 mb-2">🎯 Learning Target</h3>
+    <p>I can store and manipulate multiple values using lists in Python.</p>
+  </div>
+
+  <div class="mb-6">
+    <h3 class="text-xl font-semibold text-indigo-700 mb-2">✏️ Your Turn: Thinking About Lists</h3>
+    <p class="mb-2">In the code below, each value is stored in a separate variable. Why might someone do this instead of using a list?</p>
+    <pre class="bg-gray-100 p-4 rounded-md text-sm mb-2">
+<code>city1 = "Dallas"
+city2 = "Austin"
+city3 = "Houston"</code>
+    </pre>
+    <div class="answer mb-4">
+      <label class="block font-medium text-gray-700 mb-1">✍️ Your answer:</label>
+      <textarea class="w-full p-3 border border-gray-300 rounded" rows="3"></textarea>
+    </div>
+  </div>
+
+  <div class="mb-6">
+    <h3 class="text-xl font-semibold text-indigo-700 mb-2">🛠 Try It: Modify the Code</h3>
+    <ol class="list-decimal list-inside text-gray-800 space-y-2">
+      <li>Open <code>126-list_operations.py</code> from your Domain 1 Student folder.</li>
+      <li>Use <code>append()</code> to add <code>"Sacramento"</code> to the <code>capitals</code> list. Run the code.</li>
+      <li>Use <code>insert()</code> to place <code>"Little Rock"</code> before <code>"Sacramento"</code>. Rerun the code.</li>
+      <li>What is the object and method in <code>capitals.append("Sacramento")</code>?
+        <ul class="list-disc list-inside ml-4">
+          <li>Object: <span class="font-semibold text-gray-600">______</span></li>
+          <li>Method: <span class="font-semibold text-gray-600">______</span></li>
+        </ul>
+      </li>
+      <li>Save the file as <code>126-list_operations-completed.py</code>.</li>
+    </ol>
+  </div>
+
+  <div class="bg-indigo-50 p-4 rounded-md mb-6">
+    <h3 class="text-xl font-semibold text-indigo-800 mb-2">🧠 Deeper Thinking</h3>
+    <ol class="list-decimal list-inside text-gray-800 space-y-2">
+      <li>Why does <code>"Little Rock"</code> appear twice when you run the program?</li>
+      <li>What are two ways you could fix this?
+        <ul class="list-disc list-inside ml-4">
+          <li>a. <span class="font-semibold text-gray-600">______</span></li>
+          <li>b. <span class="font-semibold text-gray-600">______</span></li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+
+  <div class="mb-6">
+    <h3 class="text-xl font-semibold text-indigo-700 mb-2">🧪 Practice and Analyze</h3>
+    <ol class="list-decimal list-inside text-gray-800 space-y-2">
+      <li>Open <code>126-analyze.py</code>.</li>
+      <li>What will the <code>print()</code> statement on line 2 output?</li>
+      <li>What kind of data structure is used on line 4?</li>
+      <li>How would you change the <code>coins</code> list to use <code>"bronze"</code> instead of <code>"platinum"</code>?</li>
+    </ol>
+  </div>
+
+  <div class="bg-indigo-50 p-4 rounded-md mb-6">
+    <h3 class="text-xl font-semibold text-indigo-800 mb-2">📂 Project Summary</h3>
+    <ul class="list-disc list-inside text-gray-800">
+      <li><strong>Files:</strong> 126-list_operations.py, 126-analyze.py</li>
+      <li><strong>Estimated Time:</strong> 10–15 minutes</li>
+      <li><strong>Objectives:</strong>
+        <ul class="list-disc list-inside ml-4">
+          <li>1.2.5 Use lists to store data</li>
+          <li>1.2.6 Perform operations on lists</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="bg-yellow-50 p-4 rounded-md">
+    <h3 class="text-lg font-semibold text-yellow-700">📌 Notes for Teachers</h3>
+    <ul class="list-disc list-inside text-gray-800">
+      <li>Append: <code>capitals.append("Sacramento")</code></li>
+      <li>Insert before: <code>capitals.insert(3, "Little Rock")</code></li>
+      <li>Reinforce that <code>.</code> accesses a method of the object before it.</li>
+      <li>Have students verbalize how list operations affect code flow and output.</li>
+    </ul>
+  </div>
+</section>
+
 
     <!-- LESSON 5 -->
     <section id="lesson5"  class="bg-white p-6 rounded-xl shadow-lg mb-10">
